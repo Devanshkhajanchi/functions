@@ -1,4 +1,4 @@
-#one, #two, #three, #four, #five, #six {
+#cup :nth-child(n){
 	height: 35px;
 	width: 250px;
 	border: 1px solid black;
