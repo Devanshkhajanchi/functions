@@ -1,0 +1,11 @@
+#one, #two, #three, #four, #five, #six {
+	height: 3rem;
+	width: 10rem;
+	border: 1px solid black;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
