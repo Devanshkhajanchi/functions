@@ -195,9 +195,16 @@ refreshButton.addEventListener("click", ()=>{
 serveButton.addEventListener("click", ()=>{
 	let espressoCount = coffeeMix.filter(ingredient => ingredient === "Espresso").length;
 	let steamedMilkCount = coffeeMix.filter(ingredient => ingredient === "Steamed Milk").length;
+	let hotWaterCount = coffeeMix.filter(ingredient => ingredient === "Hot Water").length;
 
 	if (espressoCount === 1 && steamedMilkCount === 1) {
 		alert("You made a cortado");
+	} else if (espressoCount === 1 && steamedMilkCount === 2) {
+		alert ("You made a Flat White");
+	} else if (espressoCount === 1 && hotWaterCount === 1) {
+		alert ("You made a Cafe Zorro");
+	} else if (espressoCount === 1 && hotWaterCount === 2) {
+		alert ("You made an Americano");
 	} else if (espressoCount === 6) {
 		alert("That's almost certain death");
 	} else if (espressoCount === 5) {
