@@ -56,18 +56,44 @@ let dripCoffeeButton = document.getElementById("drip-coffee-button");
 let refreshButton = document.getElementById("refresh-button");
 let serveButton = document.getElementById("serve-button");
 
-
+// ESPRESSO
 espressoButton.addEventListener("click", ()=>{
-	console.log('works')
+	console.log('Espresso added')
 	counter += 1 
 	if(counter > 5){
 		alert("Please stop")
 	} else {
-		divList[counter].style.backgroundColor = "darkgoldenrod"
+		divList[counter].style.backgroundColor = "darkgoldenrod";
 		coffeeMix.push("Espresso")
 		console.log(coffeeMix)
 	}
 })
+
+// HOT WATER
+hotWaterButton.addEventListener("click", ()=>{
+	console.log('Hot Water added')
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop)");
+	} else {
+		divList[counter].style.backgroundColor = "skyblue";
+		coffeeMix.push("Hot Water");
+		console.log(coffeeMix);
+	}
+})
+
+// STEAMED MILK
+steamedMilkButton.addEventListener("click", ()=>{
+	console.log('Steamed Milk added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+		divList[counter].style.backgroundColor = "ivory";
+		coffeeMix.push("Steamed Milk");
+		console.log(coffeeMix);
+	}
+});
 
 
 refreshButton.addEventListener("click", ()=>{
@@ -80,20 +106,40 @@ refreshButton.addEventListener("click", ()=>{
 })
 
 
+// serveButton.addEventListener("click", ()=>{
+// 	if (coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso" && coffeeMix[5] == "Espresso"){
+// 		alert("That's almost certain death") 
+// 	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso"){
+// 		alert("You made way too much Espresso")
+// 	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso"){
+// 		alert("You made a lot of Espresso")
+// 	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] == "Espresso"){
+// 		alert("You made a triple espresso")
+// 	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso"){
+// 		alert("You made a double espresso")
+// 	} else if (coffeeMix[0] == 'Espresso'){
+// 		alert("You made a single espresso")
+// 	} else if (coffeeMix.length == 0){
+// 		alert("your cup is empty")
+// 	}
+// })
+
 serveButton.addEventListener("click", ()=>{
-	if (coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso" && coffeeMix[5] == "Espresso"){
-		alert("That's almost certain death") 
-	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso"){
-		alert("You made way too much Espresso")
-	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso"){
-		alert("You made a lot of Espresso")
-	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] == "Espresso"){
-		alert("You made a triple espresso")
-	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso"){
-		alert("You made a double espresso")
-	} else if (coffeeMix[0] == 'Espresso'){
-		alert("You made a single espresso")
-	} else if (coffeeMix.length == 0){
-		alert("your cup is empty")
+	let espressoCount = coffeeMix.filter(ingredient => ingredient === "Espresso").length;
+
+	if (espressoCount === 6) {
+		alert("That's almost certain death");
+	} else if (espressoCount === 5) {
+		alert("You made way too much Espresso");
+	} else if (espressoCount === 4) {
+		alert("You made a lot of Espresso");
+	} else if (espressoCount === 3) {
+		alert("You made a triple espresso");
+	} else if (espressoCount === 2) {
+		alert("You made a double espresso");
+	} else if (espressoCount === 1) {
+		alert("You made a single espresso");
+	} else {
+		alert("Your cup is empty");
 	}
-})
+});
