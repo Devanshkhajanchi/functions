@@ -220,4 +220,11 @@ serveButton.addEventListener("click", ()=>{
 	} else {
 		alert("Your cup is empty");
 	}
+
+	divList.forEach(box => {
+		box.style.backgroundColor = "transparent";
+	});
+	
+	counter = -1;
+	coffeeMix = [];
 });
