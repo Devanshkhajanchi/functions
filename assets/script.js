@@ -61,7 +61,7 @@ espressoButton.addEventListener("click", ()=>{
 	console.log('works')
 	counter += 1 
 	if(counter > 5){
-		alert("too much")
+		alert("Please stop")
 	} else {
 		divList[counter].style.backgroundColor = "darkgoldenrod"
 		coffeeMix.push("Espresso")
@@ -81,12 +81,18 @@ refreshButton.addEventListener("click", ()=>{
 
 
 serveButton.addEventListener("click", ()=>{
-	if (coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] == "Espresso"){
-		alert("you made a triple espresso")
+	if (coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso" && coffeeMix[5] == "Espresso"){
+		alert("That's almost certain death") 
+	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso" && coffeeMix[4] == "Espresso"){
+		alert("You made way too much Espresso")
+	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] ==  "Espresso" && coffeeMix[3] == "Espresso"){
+		alert("You made a lot of Espresso")
+	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso" && coffeeMix[2] == "Espresso"){
+		alert("You made a triple espresso")
 	} else if(coffeeMix[0] == "Espresso" && coffeeMix[1]=="Espresso"){
-		alert("you made a double espresso")
+		alert("You made a double espresso")
 	} else if (coffeeMix[0] == 'Espresso'){
-		alert("you made a single espresso")
+		alert("You made a single espresso")
 	} else if (coffeeMix.length == 0){
 		alert("your cup is empty")
 	}
