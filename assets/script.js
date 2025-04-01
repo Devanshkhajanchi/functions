@@ -74,13 +74,27 @@ hotWaterButton.addEventListener("click", ()=>{
 	console.log('Hot Water added')
 	counter += 1;
 	if (counter > 5) {
-		alert("Please stop)");
+		alert("Please stop");
 	} else {
 		divList[counter].style.backgroundColor = "skyblue";
 		coffeeMix.push("Hot Water");
 		console.log(coffeeMix);
 	}
-})
+});
+
+// MILK FOAM
+milkFoamButton.addEventListener("click", ()=>{
+	console.log('Milk Foam added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+	divList[counter].style.backgroundColor = "bisque";
+		coffeeMix.push("Milk Foam");
+		console.log(coffeeMix);
+	}
+});
+
 
 // STEAMED MILK
 steamedMilkButton.addEventListener("click", ()=>{
@@ -94,6 +108,60 @@ steamedMilkButton.addEventListener("click", ()=>{
 		console.log(coffeeMix);
 	}
 });
+
+// CHOCOLATE
+chocolateButton.addEventListener("click", ()=>{
+	console.log('Chocolate added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+		divList[counter].style.backgroundColor = "chocolate";
+		coffeeMix.push("Chocolate");
+		console.log(coffeeMix);
+	}
+});
+
+// ICE CREAM
+iceCreamButton.addEventListener("click", ()=>{
+	console.log('Ice Cream added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+		divList[counter].style.backgroundColor = "lightyellow";
+		coffeeMix.push("Ice Cream");
+		console.log(coffeeMix);
+	}
+});
+
+// CREAM
+creamButton.addEventListener("click", ()=>{
+	console.log('Cream added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+		divList[counter].style.backgroundColor = "mintcream";
+		coffeeMix.push("Cream");
+		console.log(coffeeMix);
+	}
+});
+
+// DRIP COFFEE
+dripCoffeeButton.addEventListener("click", ()=>{
+	console.log('Drip Coffee added');
+	counter += 1;
+	if (counter > 5) {
+		alert("Please stop");
+	} else {
+		divList[counter].style.backgroundColor = "saddlebrown";
+		coffeeMix.push("Drip Coffee");
+		console.log(coffeeMix);
+	}
+});
+
+
 
 
 refreshButton.addEventListener("click", ()=>{
