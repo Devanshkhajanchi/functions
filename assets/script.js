@@ -1,3 +1,5 @@
+// JSON DATA
+
 // let coffeeData = [{
 // 	'name': "Espresso", 
 // 	'color': "darkgoldenrod",
@@ -32,6 +34,9 @@
 // 	'height': 1
 // }]
 
+// ATTRIBUTION
+// Coded with assistance from Liv Beruti, Parsons MFA CD
+
 let divOne = document.getElementById("one");
 let divTwo = document.getElementById("two");
 let divThree = document.getElementById("three");
@@ -55,6 +60,8 @@ let dripCoffeeButton = document.getElementById("drip-coffee-button");
 
 let refreshButton = document.getElementById("refresh-button");
 let serveButton = document.getElementById("serve-button");
+
+//INGREDIENTS
 
 // ESPRESSO
 espressoButton.addEventListener("click", ()=>{
@@ -94,7 +101,6 @@ milkFoamButton.addEventListener("click", ()=>{
 		console.log(coffeeMix);
 	}
 });
-
 
 // STEAMED MILK
 steamedMilkButton.addEventListener("click", ()=>{
@@ -163,7 +169,6 @@ dripCoffeeButton.addEventListener("click", ()=>{
 
 
 
-
 refreshButton.addEventListener("click", ()=>{
 	divList.forEach(box => {
 		box.style.backgroundColor = "transparent"
@@ -194,13 +199,33 @@ refreshButton.addEventListener("click", ()=>{
 
 serveButton.addEventListener("click", ()=>{
 	let espressoCount = coffeeMix.filter(ingredient => ingredient === "Espresso").length;
-	let steamedMilkCount = coffeeMix.filter(ingredient => ingredient === "Steamed Milk").length;
 	let hotWaterCount = coffeeMix.filter(ingredient => ingredient === "Hot Water").length;
+	let milkFoamCount = coffeeMix.filter(ingredient => ingredient === "Milk Foam").length;
+	let steamedMilkCount = coffeeMix.filter(ingredient => ingredient === "Steamed Milk").length;
+	let chocolateCount = coffeeMix.filter(ingredient => ingredient === "Chocolate").length;
+	let iceCreamCount = coffeeMix.filter(ingredient => ingredient === "Ice Cream").length;
+	let creamCount = coffeeMix.filter(ingredient => ingredient === "Cream").length;
+	let dripCoffeeCount = coffeeMix.filter(ingredient => ingredient === "Drip Coffee").length;
+
 
 	if (espressoCount === 1 && steamedMilkCount === 1) {
-		alert("You made a cortado");
+		alert("You made a cortado");	
+	} else if (espressoCount === 1 && iceCreamCount === 1) {
+		alert ("You made an Affogato");
+	} else if (steamedMilkCount === 3 && chocolateCount === 1) {
+		alert ("You made Hot Chocolate");
+	} else if (espressoCount === 1 && steamedMilkCount === 2 && chocolateCount === 1) {
+		alert ("You made a Mocha");
+	} else if (espressoCount === 1 && steamedMilkCount === 2 && milkFoamCount === 1) {
+		alert ("You made a Latte");
+	} else if (espressoCount === 1 && steamedMilkCount === 1 && milkFoamCount === 1) {
+		alert ("You made a Cappuccino");
 	} else if (espressoCount === 1 && steamedMilkCount === 2) {
 		alert ("You made a Flat White");
+	} else if (espressoCount === 1 && dripCoffeeCount === 3) {
+		alert ("You made a Black Eye");
+	} else if (espressoCount === 1 && dripCoffeeCount === 2) {
+		alert ("You made a Red Eye");
 	} else if (espressoCount === 1 && hotWaterCount === 1) {
 		alert ("You made a Cafe Zorro");
 	} else if (espressoCount === 1 && hotWaterCount === 2) {
@@ -212,9 +237,9 @@ serveButton.addEventListener("click", ()=>{
 	} else if (espressoCount === 4) {
 		alert("You made a lot of Espresso");
 	} else if (espressoCount === 3) {
-		alert("You made a triple espresso");
+		alert("You made 3 shots of Espresso");
 	} else if (espressoCount === 2) {
-		alert("You made a double espresso");
+		alert("You made a Doppio");
 	} else if (espressoCount === 1) {
 		alert("You made a single espresso");
 	} else {
