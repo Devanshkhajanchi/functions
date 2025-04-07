@@ -199,7 +199,7 @@ serveButton.addEventListener("click", ()=>{
 
 if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	let alertString = "You made a Cortado";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(cortadoNew, alertString, sourceImg);
 	cortadoNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -207,7 +207,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && iceCreamCount === 1 && coffeeMix.length == 2) {
 	let alertString = "You made an Affogato";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(affogatoNew, alertString, sourceImg);
 	affogatoNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -215,7 +215,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (steamedMilkCount === 3 && chocolateCount === 1 && coffeeMix.length == 4) {
 	let alertString = "You made Hot Chocolate";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(hotChocolateNew, alertString, sourceImg);
 	hotChocolateNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -223,7 +223,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && chocolateCount === 1 && coffeeMix.length == 4) {
 	let alertString = "You made a Mocha";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(mochaNew, alertString, sourceImg);
 	mochaNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -231,7 +231,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && milkFoamCount === 1 && coffeeMix.length == 4) {
 	let alertString = "You made a Latte";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(latteNew, alertString, sourceImg);
 	latteNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -239,7 +239,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && steamedMilkCount === 1 && milkFoamCount === 1 && coffeeMix.length == 3) {
 	let alertString = "You made a Cappuccino";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(cappuccinoNew, alertString, sourceImg);
 	cappuccinoNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -247,7 +247,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && coffeeMix.length == 3) {
 	let alertString = "You made a Flat White";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(flatWhiteNew, alertString, sourceImg);
 	flatWhiteNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -255,7 +255,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && dripCoffeeCount === 3 && coffeeMix.length == 4) {
 	let alertString = "You made a Black Eye";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(blackEyeNew, alertString, sourceImg);
 	blackEyeNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -263,7 +263,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && dripCoffeeCount === 2 && coffeeMix.length == 3) {
 	let alertString = "You made a Red Eye";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(redEyeNew, alertString, sourceImg);
 	redEyeNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -271,7 +271,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && hotWaterCount === 1 && coffeeMix.length == 2) {
 	let alertString = "You made a Cafe Zorro";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(cafeZorroNew, alertString, sourceImg);
 	cafeZorroNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -279,7 +279,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && hotWaterCount === 2 && coffeeMix.length == 3) {
 	let alertString = "You made an Americano";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(americanoNew, alertString, sourceImg);
 	americanoNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -296,7 +296,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 3 && coffeeMix.length == 3)  {
 	let alertString = "You made 3 shots of Espresso";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(threeEspressoNew, alertString, sourceImg);
 	threeEspressoNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -304,7 +304,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 2 && coffeeMix.length == 2) {
 	let alertString = "You made a doppio";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(doppioNew, alertString, sourceImg);
 	doppioNew = result.recipeBool;
 	alertString = result.stringForAlert;
@@ -312,7 +312,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 1 && coffeeMix.length == 1) {
 	let alertString = "You made a single espresso";
-	let sourceImg = "assets/single-espresso.png";
+	let sourceImg = "../assets/single-espresso.png";
 	let result = booleanCheck(espressoNew, alertString, sourceImg);
 	espressoNew = result.recipeBool;
 	alertString = result.stringForAlert;
