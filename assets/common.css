@@ -56,10 +56,11 @@ button {
 	border: none;
 	border-radius: 0.5rem;
 	letter-spacing: var(--spacing-tight);
+	gap: 2rem;
 	cursor: pointer;
 }
 
-.action-button {
+.action-buttons {
 	background-color: var(--color-white);
 	color: var(--color-black);
 	border: 2px solid var(--color-black);
@@ -94,13 +95,6 @@ nav {
 	gap: 1rem;
 }
 
-#action-buttons {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	max-width: 10rem;
-}
-
 /* LARGER DEVICES */
 
 @media (min-width: 426px) {
@@ -110,6 +104,6 @@ nav {
 	cursor: pointer;
 }
 	section {
-		flex-direction: row;
+		align-items: center;
 	}
 }
