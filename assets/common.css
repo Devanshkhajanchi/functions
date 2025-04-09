@@ -10,6 +10,10 @@ section {
 	gap: 2rem;
 }
 
+button {
+	touch-action: manipulation;
+}
+
 #all-buttons {
 	display: flex;
 	flex-direction: column;
