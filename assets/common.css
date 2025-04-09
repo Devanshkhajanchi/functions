@@ -1,3 +1,36 @@
+:root {
+/* TYPOGRAPHY */
+	--font-base: 'Roboto', sans-serif;
+
+	--font-size-h1: 3rem;
+	--font-size-h2: 2.4rem;
+	--font-size-h3: 2rem;
+	--font-size-h4: 1.5rem;
+	--font-size-p: 1.2rem;
+	--font-size-small: 0.875rem;
+
+/* LINE HEIGHT */
+	--line-height-tight: 1;
+	--line-height-normal: 1.2;
+	--line-height-loose: 1.5;
+
+/* LETTER SPACING */
+	--spacing-tight: -0.02em;
+	--spacing-wide: 0.05em;
+
+/* COLOURS */
+	--color-black: #111111;
+	--color-white: #ffffff;
+}
+
+body {
+	font-family: var(--font-base);
+	font-size: var(--font-size-p);
+	line-height: var(--line-height-normal);
+	color: var(--color-black);
+	background: var(--color-white);
+}
+
 #cup :nth-child(n){
 	height: 35px;
 	width: 250px;
@@ -12,6 +45,41 @@ section {
 
 button {
 	touch-action: manipulation;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: var(--font-size-p);
+	line-height: var(--line-height-normal);
+	text-align: center;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 0.5rem;
+	letter-spacing: var(--spacing-tight);
+	cursor: pointer;
+}
+
+.action-button {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	border: 2px solid var(--color-black);
+}
+
+.ingredient-button {
+	flex: 1 1 calc(33.33% - 1rem); /* Learnt using LLM */
+	min-width: 120px;
+	max-width: 180px;
+	box-sizing: border-box;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	border: none;
+	font-family: var(--font-base);
+	font-size: var(--font-size-p);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
 }
 
 #all-buttons {
@@ -33,7 +101,14 @@ button {
 	max-width: 10rem;
 }
 
+/* LARGER DEVICES */
+
 @media (min-width: 426px) {
+
+
+	a:hover, button:hover {
+	cursor: pointer;
+}
 	section {
 		flex-direction: row;
 	}

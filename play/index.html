@@ -4,22 +4,30 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 		<title>coffee game thing</title>
+
+<!-- TYPEFACES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <!-- CSS -->
 		<link href="../assets/reset.css" rel="stylesheet">
 		<link rel="stylesheet" href="../assets/common.css">
+
 <!-- JS -->
 		<script defer src="../assets/script.js"></script>
 	</head>
-
-<!-- BODY -->
 	<body>
+
 <!-- HEADER -->
 		<header>
 			<nav>
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../learn/index.html">Learn</a></li>
-					<li><a href="../play/index.html">Play</a></li>
+					<li><a href="../index.html">Java</a></li>
+					<div>
+						<li><a href="../learn/index.html">Learn</a></li>
+						<li><a href="../play/index.html">Play</a></li>
+					</div>
 				</ul>
 			</nav>
 		</header>
@@ -43,38 +51,39 @@
 				</div>
 				<div id="all-buttons">
 					<div id="ingredients">
-						<button type="button" id="espresso-button">Espresso</button>
-						<button type="button" id="hot-water-button">Hot Water</button>
-						<button type="button" id="milk-foam-button">Milk Foam</button>
-						<button type="button" id="steamed-milk-button">Steamed Milk</button>
-						<button type="button" id="chocolate-button">Chocolate</button>
-						<button type="button" id="ice-cream-button">Ice Cream</button>
-						<button type="button" id="cream-button">Cream</button>
-						<button type="button" id="drip-coffee-button">Drip Coffee</button>
+						<button type="button" id="espresso-button" class="ingredient-button">Espresso</button>
+						<button type="button" id="hot-water-button" class="ingredient-button">Hot Water</button>
+						<button type="button" id="milk-foam-button" class="ingredient-button">Milk Foam</button>
+						<button type="button" id="steamed-milk-button" class="ingredient-button">Steamed Milk</button>
+						<button type="button" id="chocolate-button" class="ingredient-button">Chocolate</button>
+						<button type="button" id="ice-cream-button" class="ingredient-button">Ice Cream</button>
+						<button type="button" id="cream-button" class="ingredient-button">Cream</button>
+						<button type="button" id="drip-coffee-button" class="ingredient-button">Drip Coffee</button>
 					</div>
 					<div id="action-buttons">
-						<button type="reset" id="refresh-button">Start Fresh</button>
-						<button type="submit" id="serve-button">Serve</button>
+						<button type="reset" id="refresh-button" class="action-button">Start Fresh</button>
+						<button type="submit" id="serve-button" class="action-button">Serve</button>
 					</div>
+				</div>
+				<div id="mystery-drink">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-1">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-2">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-3">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-4">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-5">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-6">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-7">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-8">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-9">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-10">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-11">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-12">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-13">
+					<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-14">
 				</div>
 			</section>
 
-			<div id="mystery-drink">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-1">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-2">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-3">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-4">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-5">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-6">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-7">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-8">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-9">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-10">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-11">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-12">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-13">
-				<img src="../assets/mystery-drink.png" alt="" class="drink" id="mystery-14">
-			</div>
+
 		</main>
 
 <!-- FOOTER -->

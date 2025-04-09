@@ -285,7 +285,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	alertString = result.stringForAlert;
 	alert(alertString);
 
-} else if (espressoCount === 6 && coffeeMix.length == 1) {
+} else if (espressoCount === 6 && coffeeMix.length == 6) {
 	alert("That's almost certain death");
 
 } else if (espressoCount === 5 && coffeeMix.length == 5) {
