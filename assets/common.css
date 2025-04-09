@@ -47,10 +47,19 @@ header {
 	
 }
 
+p {
+	max-width: 55ch;
+}
+
 #cup :nth-child(n){
 	height: 35px;
 	width: 250px;
 	border: 1px solid black;
+}
+
+main {
+	padding-inline: 1rem;
+	margin: auto;
 }
 
 section {
@@ -59,10 +68,9 @@ section {
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
-	padding-inline: 1rem;
 }
 
-button {
+button, .button {
 	touch-action: manipulation;
 	background-color: var(--color-black);
 	color: var(--color-white);
@@ -103,10 +111,32 @@ button {
 	gap: 2rem;
 }
 
+#play-learn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2rem;
+	max-width: 55ch;
+
+}
+
+#play, #learn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
 #ingredients {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
+}
+
+.site-name {
+	font-size: var(--font-size-h1);
+	font-weight: 700;
+	line-height: var(--line-height-tight);
 }
 
 footer {
