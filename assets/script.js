@@ -380,7 +380,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 		alertString = "You made a Cafe Zorro, it's a new drink";
 		cafeZorroImg.src = "../assets/single-espresso.png"
 		discoverDrinkCounter += 1;
-		espressoNew = false;
+		cafeZorroNew = false;
 
 	} else {
 		alertString = "You made a Cafe Zorro espresso";
