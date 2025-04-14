@@ -1,6 +1,7 @@
 // ATTRIBUTION & CREDIT
 // Coded with assistance from Liv Beruti, Parsons MFA CD
 
+//BOOLEANS
 let espressoNew = true;
 let doppioNew = true;
 let threeEspressoNew = true;
@@ -16,15 +17,38 @@ let mochaNew = true;
 let blackEyeNew = true;
 let redEyeNew = true;
 
+let espressoImg = document.getElementById("espresso-img");
+let doppioImg = document.getElementById("doppio-img");
+let threeEspressoImg = document.getElementById ("threeespressos-img")
+let cafeZorroImg = document.getElementById("cafezorro-img");
+let americanoImg = document.getElementById("americano-img");
+let cappuccinoImg = document.getElementById("cappuccino-img");
+let latteImg = document.getElementById("latte-img");
+let cortadoImg = document.getElementById("cortado-img");
+let flatWhiteImg = document.getElementById("flatwhite-img");
+let hotChocolateImg = document.getElementById("hotchocolate-img");
+let affogatoImg = document.getElementById("affogato-img");
+let mochaImg = document.getElementById("mocha-img");
+let blackEyeImg = document.getElementById("blackeye-img");
+let redEyeImg = document.getElementById("redeye-img");
+
 
 
 let mysteryDrinks = document.querySelectorAll('.drink');
 let mysteryDrinkList = [];
-let discoverDrinkCounter = -1
-
 mysteryDrinks.forEach((drink) => {
-  mysteryDrinkList.push(drink);
-});
+	mysteryDrinkList.push(drink);
+  });
+
+let mysteryDrinksName = document.querySelectorAll('.drink-name');
+let mysteryDrinkNamesList = [];
+mysteryDrinksName.forEach((drinkname) =>{
+	mysteryDrinkNamesList.push(drinkname);
+})
+
+let discoverDrinkCounter = -1;
+
+
 
 console.log(mysteryDrinkList);
 
@@ -172,19 +196,6 @@ refreshButton.addEventListener("click", ()=>{
 
 serveButton.addEventListener("click", ()=>{
 
-	function booleanCheck(recipeBool, stringForAlert, imgSrc){
-		if(recipeBool){
-			discoverDrinkCounter += 1;
-			recipeBool = false;
-			stringForAlert += " — and it's a brand new discovery!";
-			mysteryDrinkList[discoverDrinkCounter].src = imgSrc
-
-		}
-		return { recipeBool, stringForAlert };
-	}
-
-
-
 	let espressoCount = coffeeMix.filter(ingredient => ingredient === "Espresso").length;
 	let hotWaterCount = coffeeMix.filter(ingredient => ingredient === "Hot Water").length;
 	let milkFoamCount = coffeeMix.filter(ingredient => ingredient === "Milk Foam").length;
@@ -197,92 +208,202 @@ serveButton.addEventListener("click", ()=>{
 	
 // RECIPES
 
+	//Cortado
+
 if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
-	let alertString = "You made a Cortado";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(cortadoNew, alertString, sourceImg);
-	cortadoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+	
+	let alertString = ""
+
+	if(cortadoNew){
+		alertString = "You made a Cortado, it's a new drink";
+		cortadoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Hot Chocolate";
+	}
+	
 	alert(alertString);
+
+	//Affogato
 
 } else if (espressoCount === 1 && iceCreamCount === 1 && coffeeMix.length == 2) {
-	let alertString = "You made an Affogato";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(affogatoNew, alertString, sourceImg);
-	affogatoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(affogatoNew){
+		alertString = "You made a Affogato, it's a new recipe";
+		affogatoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Affogato";
+	}
+	
 	alert(alertString);
 
+	//Hot Chocolate
+
 } else if (steamedMilkCount === 3 && chocolateCount === 1 && coffeeMix.length == 4) {
-	let alertString = "You made Hot Chocolate";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(hotChocolateNew, alertString, sourceImg);
-	hotChocolateNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(hotChocolateNew){
+		alertString = "You made a Hot Chocolate, it's a new drink";
+		hotChocolateImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Hot Chocolate";
+	}
+
+	//Cafe Mocha
+	
 	alert(alertString);
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && chocolateCount === 1 && coffeeMix.length == 4) {
-	let alertString = "You made a Mocha";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(mochaNew, alertString, sourceImg);
-	mochaNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(mochaNew){
+		alertString = "You made a Cafe Mocha, it's a new drink";
+		mochaImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Cafe Mocha";
+	}
+	
 	alert(alertString);
+
+	//Cafe Latte
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && milkFoamCount === 1 && coffeeMix.length == 4) {
-	let alertString = "You made a Latte";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(latteNew, alertString, sourceImg);
-	latteNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(latteNew){
+		alertString = "You made a Cafe Latte, it's a new drink";
+		latteImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Cafe Latte";
+	}
+	
 	alert(alertString);
+
+	//Cappuccino
 
 } else if (espressoCount === 1 && steamedMilkCount === 1 && milkFoamCount === 1 && coffeeMix.length == 3) {
-	let alertString = "You made a Cappuccino";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(cappuccinoNew, alertString, sourceImg);
-	cappuccinoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(cappuccinoNew){
+		alertString = "You made a Cappuccino, it's a new drink";
+		cappuccinoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Cappuccino";
+	}
+	
 	alert(alertString);
+
+	//Flat White
 
 } else if (espressoCount === 1 && steamedMilkCount === 2 && coffeeMix.length == 3) {
-	let alertString = "You made a Flat White";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(flatWhiteNew, alertString, sourceImg);
-	flatWhiteNew = result.recipeBool;
-	alertString = result.stringForAlert;
+	
+	let alertString = ""
+
+	if(flatWhiteNew){
+		alertString = "You made a Flat White, it's a new drink";
+		flatWhiteImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Flat White";
+	}
+	
 	alert(alertString);
+
+	//Black Eye
 
 } else if (espressoCount === 1 && dripCoffeeCount === 3 && coffeeMix.length == 4) {
-	let alertString = "You made a Black Eye";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(blackEyeNew, alertString, sourceImg);
-	blackEyeNew = result.recipeBool;
-	alertString = result.stringForAlert;
+	
+	let alertString = ""
+
+	if(blackEyeNew){
+		alertString = "You made a Black Eye, it's a new drink";
+		blackEyeImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Black Eye espresso";
+	}
+	
 	alert(alertString);
+
+	//Red Eye
 
 } else if (espressoCount === 1 && dripCoffeeCount === 2 && coffeeMix.length == 3) {
-	let alertString = "You made a Red Eye";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(redEyeNew, alertString, sourceImg);
-	redEyeNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(redEyeNew){
+		alertString = "You made a Red Eye, it's a new drink";
+		redEyeImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Red Eye espresso";
+	}
+	
 	alert(alertString);
+
+	//Cafe Zorro
 
 } else if (espressoCount === 1 && hotWaterCount === 1 && coffeeMix.length == 2) {
-	let alertString = "You made a Cafe Zorro";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(cafeZorroNew, alertString, sourceImg);
-	cafeZorroNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(cafeZorroNew){
+		alertString = "You made a Cafe Zorro, it's a new drink";
+		cafeZorroImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a Cafe Zorro espresso";
+	}
+	
 	alert(alertString);
 
+	//Americano
+
 } else if (espressoCount === 1 && hotWaterCount === 2 && coffeeMix.length == 3) {
-	let alertString = "You made an Americano";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(americanoNew, alertString, sourceImg);
-	americanoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(americanoNew){
+		alertString = "You made a americano, it's a new drink";
+		americanoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		americanoNew = false;
+
+	} else {
+		alertString = "You made a doppio espresso";
+	}
+	
 	alert(alertString);
 
 } else if (espressoCount === 6 && coffeeMix.length == 6) {
@@ -294,28 +415,58 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 } else if (espressoCount === 4 && coffeeMix.length == 4) {
 	alert("You made a lot of Espresso");
 
+	//Triple Espresso
+
 } else if (espressoCount === 3 && coffeeMix.length == 3)  {
-	let alertString = "You made 3 shots of Espresso";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(threeEspressoNew, alertString, sourceImg);
-	threeEspressoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(threeEspressoNew){
+		alertString = "You made a Triple Espresso, it's a new drink";
+		threeEspressoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a triple espresso espresso";
+	}
+	
 	alert(alertString);
+
+	//Doppio
 
 } else if (espressoCount === 2 && coffeeMix.length == 2) {
-	let alertString = "You made a doppio";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(doppioNew, alertString, sourceImg);
-	doppioNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(doppioNew){
+		alertString = "You made a doppio, it's a new drink";
+		doppioImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a doppio espresso";
+	}
+	
 	alert(alertString);
 
+	//Espresso
+
 } else if (espressoCount === 1 && coffeeMix.length == 1) {
-	let alertString = "You made a single espresso";
-	let sourceImg = "../assets/single-espresso.png";
-	let result = booleanCheck(espressoNew, alertString, sourceImg);
-	espressoNew = result.recipeBool;
-	alertString = result.stringForAlert;
+
+	let alertString = ""
+
+	if(espressoNew){
+		alertString = "You made a single espresso, it's a new drink";
+		espressoImg.src = "../assets/single-espresso.png"
+		discoverDrinkCounter += 1;
+		espressoNew = false;
+
+	} else {
+		alertString = "You made a single espresso";
+	}
+
 	alert(alertString);
 
 } else if (coffeeMix.length == 0){

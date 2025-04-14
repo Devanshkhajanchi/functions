@@ -52,6 +52,20 @@ p {
 	max-width: 55ch;
 }
 
+#bottom-nav{
+	position: fixed;
+	bottom: 0;
+	
+	background-color: var(--color-black);
+	width: 100vw;
+}
+
+#mystery-drink{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
 #cup :nth-child(n){
 	height: 35px;
 	width: 250px;
