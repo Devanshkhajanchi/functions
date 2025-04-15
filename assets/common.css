@@ -52,24 +52,67 @@ p {
 	max-width: 55ch;
 }
 
-#bottom-nav{
+#bottom-nav {
 	position: fixed;
 	bottom: 0;
-	
 	background-color: var(--color-black);
 	width: 100vw;
+}
+
+#cup-styling {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+#cup-mask {
+	width: 3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+.mystery-drinks {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	gap: 0.5rem;
+	text-align: center;
+	align-items: center;
+
+	img {
+		width: fit-content;
+	}
+
+	p {
+		font-size: var(--font-size-small);
+	}
 }
 
 #mystery-drink{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	gap: 1rem;
 }
 
 #cup :nth-child(n){
 	height: 35px;
 	width: 250px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+}
+
+#cup {
+	background-color: lightgrey;
 }
 
 main {
