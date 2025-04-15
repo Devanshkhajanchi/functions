@@ -68,8 +68,8 @@ body {
 
 header {
 	background-color: var(--color-black);
-	padding: 1.5rem;
-	margin-bottom: 3rem;
+	padding: 1.2rem;
+	margin-bottom: 1.5rem;
 	position: sticky;
 	top: 0rem;
 }
@@ -89,7 +89,7 @@ p {
 }
 
 .site-name {
-	font-size: var(--font-size-h2);
+	font-size: var(--font-size-h3);
 	font-weight: 700;
 	line-height: var(--line-height-tight);
 }
@@ -110,7 +110,7 @@ section {
 #cup-section {
 	position: sticky;
 	top: 5rem;
-	height: 15rem;
+	height: 12rem;
 	padding: 1rem;
 	z-index: 2;
 	background-color: var(--color-white);
@@ -145,8 +145,8 @@ section {
 }
 
 #cup :nth-child(n) {
-	height: 35px;
-	width: 250px;
+	height: 30px;
+	width: 215px;
 	/* border: 1px solid black; */
 }
 
@@ -161,18 +161,20 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
+	/* justify-content: space-between; */
 }
 
 .ingredient-button {
 	flex: 1 1 calc(33.33% - 1rem);
-	min-width: 120px;
-	max-width: 180px;
+	min-width: 60px;
+	max-width: 100px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	border: none;
 	font-family: var(--font-base);
-	font-size: var(--font-size-p);
+	font-size: var(--font-size-small);
+	font-weight: 600;
 }
 
 .ingredient-icons {
@@ -216,7 +218,8 @@ button, .button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 1rem;
+	gap: 2rem;
+	max-width: 65ch;
 }
 
 #bottom-nav {
@@ -238,9 +241,10 @@ button, .button {
 }
 
 #refresh-button {
-	padding: 0.8rem;
-	background-color: tomato;
+	padding: 1rem;
+	background-color: red;
 	border-radius: 100%;
+	display: flex;
 }
 
 #refresh-button img {
