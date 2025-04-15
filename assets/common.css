@@ -52,12 +52,6 @@ p {
 	max-width: 55ch;
 }
 
-#bottom-nav {
-	position: fixed;
-	bottom: 0;
-	background-color: var(--color-black);
-	width: 100vw;
-}
 
 #cup-styling {
 	position: relative;
@@ -98,14 +92,14 @@ p {
 	}
 }
 
-#mystery-drink{
+#mystery-drink {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 1rem;
 }
 
-#cup :nth-child(n){
+#cup :nth-child(n) {
 	height: 35px;
 	width: 250px;
 	/* border: 1px solid black; */
@@ -128,10 +122,20 @@ section {
 	gap: 2rem;
 }
 
+#bottom-nav {
+	padding: 1rem;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--color-black);
+	width: 100vw;
+}
+
 button, .button {
 	touch-action: manipulation;
-	background-color: var(--color-black);
-	color: var(--color-white);
+	/* background-color: var(--color-black); */
+	/* color: var(--color-white); */
 	font-family: var(--font-base);
 	font-weight: 400;
 	font-size: var(--font-size-p);
@@ -145,10 +149,20 @@ button, .button {
 	cursor: pointer;
 }
 
-.action-buttons {
-	background-color: var(--color-white);
-	color: var(--color-black);
-	border: 2px solid var(--color-black);
+#serve-button {
+	width: 15rem;
+	background-color: #54A1F3;
+	color: white;
+}
+
+#refresh-button {
+	padding: 0.8rem;
+	background-color: tomato;
+}
+
+#refresh-button img {
+	width: 2rem;
+	height: auto;
 }
 
 .ingredient-button {
@@ -156,8 +170,7 @@ button, .button {
 	min-width: 120px;
 	max-width: 180px;
 	box-sizing: border-box;
-	background-color: var(--color-black);
-	color: var(--color-white);
+
 	border: none;
 	font-family: var(--font-base);
 	font-size: var(--font-size-p);
@@ -167,6 +180,12 @@ button, .button {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+}
+
+.ingredient-icons {
+	height: 3rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #play-learn {
@@ -199,6 +218,7 @@ button, .button {
 
 footer {
 	background-color: var(--color-black);
+	height: 18vh;
 	padding: 1.5rem;
 	p {
 		color: var(--color-white);

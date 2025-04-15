@@ -70,7 +70,7 @@ let milkFoamButton = document.getElementById("milk-foam-button");
 let steamedMilkButton = document.getElementById("steamed-milk-button");
 let chocolateButton = document.getElementById("chocolate-button");
 let iceCreamButton = document.getElementById("ice-cream-button");
-let creamButton = document.getElementById("cream-button");
+// let creamButton = document.getElementById("cream-button");
 let dripCoffeeButton = document.getElementById("drip-coffee-button");
 
 let refreshButton = document.getElementById("refresh-button");
@@ -157,17 +157,18 @@ iceCreamButton.addEventListener("click", ()=>{
 });
 
 // CREAM
-creamButton.addEventListener("click", ()=>{
-	console.log('Cream added');
-	counter += 1;
-	if (counter > 5) {
-		alert("Please stop");
-	} else {
-		divList[counter].style.backgroundColor = "mintcream";
-		coffeeMix.push("Cream");
-		console.log(coffeeMix);
-	}
-});
+
+// creamButton.addEventListener("click", ()=>{
+// 	console.log('Cream added');
+// 	counter += 1;
+// 	if (counter > 5) {
+// 		alert("Please stop");
+// 	} else {
+// 		divList[counter].style.backgroundColor = "mintcream";
+// 		coffeeMix.push("Cream");
+// 		console.log(coffeeMix);
+// 	}
+// });
 
 // DRIP COFFEE
 dripCoffeeButton.addEventListener("click", ()=>{
