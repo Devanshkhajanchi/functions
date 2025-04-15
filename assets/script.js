@@ -407,6 +407,8 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	
 	alert(alertString);
 
+	//More Espresso
+
 } else if (espressoCount === 6 && coffeeMix.length == 6) {
 	alert("That's almost certain death");
 
@@ -415,6 +417,46 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (espressoCount === 4 && coffeeMix.length == 4) {
 	alert("You made a lot of Espresso");
+
+	//Drip Coffee
+
+} else if (dripCoffeeCount === 1 && coffeeMix.length == 1) {
+	alert("You served very little drip coffee. Is this a joke to you?");
+
+} else if (dripCoffeeCount === 2 && coffeeMix.length == 2) {
+	alert("You served some drip coffee Wait, that's it?!");
+
+} else if (dripCoffeeCount === 3 && coffeeMix.length == 3) {
+	alert("You served half a drip coffee.");
+
+} else if (dripCoffeeCount === 4 && coffeeMix.length == 4) {
+	alert("You served some drip coffee. Now we're talkin");
+
+} else if (dripCoffeeCount === 5 && coffeeMix.length == 5) {
+	alert("You served drip coffee. There's still some space in the cup, what am I paying for?");
+
+} else if (dripCoffeeCount === 6 && coffeeMix.length == 6) {
+	alert("You served a Cuppa Joe... Ahhh");
+
+	//Water
+
+} else if (hotWaterCount === 1 && coffeeMix.length == 1) {
+	alert("Um, a shot of water?");
+
+} else if (hotWaterCount === 2 && coffeeMix.length == 2) {
+	alert("Come on!");
+
+} else if (hotWaterCount === 3 && coffeeMix.length == 3) {
+	alert("I have water at home you know...");
+
+} else if (hotWaterCount === 4 && coffeeMix.length == 4) {
+	alert("Fine, if you insist");
+
+} else if (hotWaterCount === 5 && coffeeMix.length == 5) {
+	alert("No really, that's enough water. I'd like some coffee please?");
+
+} else if (hotWaterCount === 6 && coffeeMix.length == 6) {
+	alert("You're a true Hydro Homie!");
 
 	//Triple Espresso
 
