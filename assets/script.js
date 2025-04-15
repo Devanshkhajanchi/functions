@@ -219,7 +219,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 		discoverDrinkCounter += 1;
 		cortadoNew = false;
 	} else {
-		alertString = "You made a cortado";
+		alertString = "You made a Cortado";
 	}
 	alert(alertString);
 
@@ -424,7 +424,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 		discoverDrinkCounter += 1;
 		threeEspressoNew = false;
 	} else {
-		alertString = "You made a triple espresso";
+		alertString = "You made a Triple Espresso";
 	}
 	alert(alertString);
 
@@ -433,12 +433,12 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 } else if (espressoCount === 2 && coffeeMix.length == 2) {
 	let alertString = ""
 	if(doppioNew){
-		alertString = "You made a doppio and discovered a new drink";
+		alertString = "You made a Doppio and discovered a new drink";
 		doppioImg.src = "../assets/svg/doppio.svg"
 		discoverDrinkCounter += 1;
 		doppioNew = false;
 	} else {
-		alertString = "You made a doppio espresso";
+		alertString = "You made a Doppio";
 	}
 	alert(alertString);
 
@@ -447,12 +447,12 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 } else if (espressoCount === 1 && coffeeMix.length == 1) {
 	let alertString = ""
 	if(espressoNew){
-		alertString = "You made a single espresso and discovered a new drink";
+		alertString = "You made a single Espresso and discovered a new drink";
 		espressoImg.src = "../assets/svg/single-espresso.svg"
 		discoverDrinkCounter += 1;
 		espressoNew = false;
 	} else {
-		alertString = "You made a single espresso";
+		alertString = "You made a single Espresso";
 	}
 	alert(alertString);
 

@@ -23,6 +23,41 @@
 	--color-white: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-base);
+	font-weight: 700;
+	letter-spacing: var(--spacing-tight);
+	line-height: var(--line-height-tight);
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: var(--font-size-h1);
+}
+
+h2 {
+font-size: var(--font-size-h2);
+}
+
+h3 {
+font-size: var(--font-size-h3);
+}
+
+h4 {
+font-size: var(--font-size-h4);
+}
+
+h5 {
+font-size: 1rem; /* Rounded down for simplicity */
+}
+
+h6 {
+font-size: var(--font-size-small);
+font-weight: 600;
+letter-spacing: var(--spacing-wide);
+text-transform: uppercase;
+}
+
 body {
 	font-family: var(--font-base);
 	font-size: var(--font-size-p);
@@ -35,6 +70,8 @@ header {
 	background-color: var(--color-black);
 	padding: 1.5rem;
 	margin-bottom: 3rem;
+	position: sticky;
+	top: 0rem;
 }
 
 header a {
@@ -70,6 +107,17 @@ section {
 	gap: 2rem;
 }
 
+#cup-section {
+	position: sticky;
+	top: 5rem;
+	height: 15rem;
+	padding: 1rem;
+	z-index: 2;
+	background-color: var(--color-white);
+	margin-bottom: 1rem;
+	width: 100vw;
+}
+
 #cup-styling {
 	position: relative;
 	display: flex;
@@ -78,6 +126,7 @@ section {
 	width: fit-content;
 	margin: auto;
 }
+
 
 #cup-mask {
 	position: absolute;
@@ -104,7 +153,8 @@ section {
 #all-buttons {
 	display: flex;
 	flex-direction: column;
-	/* gap: 1rem; */
+	gap: 1rem;
+	text-align: center;
 }
 
 #ingredients {
@@ -165,7 +215,7 @@ button, .button {
 #mystery-drink {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	justify-content: center;
 	gap: 1rem;
 }
 
@@ -199,16 +249,21 @@ button, .button {
 }
 
 .mystery-drinks {
+
+	flex: 1 1 calc(25% - 1rem); /* Flex shorthand learnt using LLM */
+	min-width: 80px;
+	max-width: 100px;
 	display: flex;
 	flex-direction: column;
-	width: auto;
-	gap: 0.5rem;
-	text-align: center;
 	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
 }
 
 .mystery-drinks img {
-	width: fit-content;
+	height: 100%;
+	width: auto;
+	object-fit: contain;
 }
 
 .mystery-drinks p {
