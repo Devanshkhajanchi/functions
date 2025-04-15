@@ -35,78 +35,26 @@ header {
 	background-color: var(--color-black);
 	padding: 1.5rem;
 	margin-bottom: 3rem;
+}
 
-	a {
-		color: var(--color-white);
-	}
+header a {
+	color: var(--color-white);
+}
 
-	ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 p {
 	max-width: 55ch;
 }
 
-
-#cup-styling {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: fit-content;
-	margin: auto;
-}
-
-#cup-mask {
-	width: 3rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	pointer-events: none;
-	width: 100%;
-	height: auto;
-	object-fit: contain;
-	display: block;
-}
-
-.mystery-drinks {
-	display: flex;
-	flex-direction: column;
-	width: auto;
-	gap: 0.5rem;
-	text-align: center;
-	align-items: center;
-
-	img {
-		width: fit-content;
-	}
-
-	p {
-		font-size: var(--font-size-small);
-	}
-}
-
-#mystery-drink {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	gap: 1rem;
-}
-
-#cup :nth-child(n) {
-	height: 35px;
-	width: 250px;
-	/* border: 1px solid black; */
-}
-
-#cup {
-	background-color: lightgrey;
+.site-name {
+	font-size: var(--font-size-h2);
+	font-weight: 700;
+	line-height: var(--line-height-tight);
 }
 
 main {
@@ -122,14 +70,67 @@ section {
 	gap: 2rem;
 }
 
-#bottom-nav {
-	padding: 1rem;
-	flex-direction: row;
+#cup-styling {
+	position: relative;
+	display: flex;
 	justify-content: center;
-	position: fixed;
-	bottom: 0;
-	background-color: var(--color-black);
-	width: 100vw;
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+#cup-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+#cup {
+	background-color: lightgrey;
+}
+
+#cup :nth-child(n) {
+	height: 35px;
+	width: 250px;
+	/* border: 1px solid black; */
+}
+
+#all-buttons {
+	display: flex;
+	flex-direction: column;
+	/* gap: 1rem; */
+}
+
+#ingredients {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.ingredient-button {
+	flex: 1 1 calc(33.33% - 1rem);
+	min-width: 120px;
+	max-width: 180px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	border: none;
+	font-family: var(--font-base);
+	font-size: var(--font-size-p);
+}
+
+.ingredient-icons {
+	height: 3rem;
+}
+
+.measurements {
+	font-size: var(--font-size-small);
 }
 
 button, .button {
@@ -139,7 +140,6 @@ button, .button {
 	font-size: var(--font-size-p);
 	line-height: var(--line-height-normal);
 	text-align: center;
-
 	border: none;
 	border-radius: 0.5rem;
 	letter-spacing: var(--spacing-tight);
@@ -147,8 +147,37 @@ button, .button {
 	cursor: pointer;
 }
 
-.measurements {
-	font-size: var(--font-size-small);
+#play-learn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2rem;
+	max-width: 55ch;
+}
+
+#play, #learn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+#mystery-drink {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+#bottom-nav {
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--color-black);
+	width: 100vw;
 }
 
 #serve-button {
@@ -161,6 +190,7 @@ button, .button {
 #refresh-button {
 	padding: 0.8rem;
 	background-color: tomato;
+	border-radius: 100%;
 }
 
 #refresh-button img {
@@ -168,73 +198,35 @@ button, .button {
 	height: auto;
 }
 
-.ingredient-button {
-	flex: 1 1 calc(33.33% - 1rem); /* Learnt using LLM */
-	min-width: 120px;
-	max-width: 180px;
-	box-sizing: border-box;
+.mystery-drinks {
 	display: flex;
 	flex-direction: column;
-
-	border: none;
-	font-family: var(--font-base);
-	font-size: var(--font-size-p);
+	width: auto;
+	gap: 0.5rem;
+	text-align: center;
+	align-items: center;
 }
 
-#all-buttons {
-	display: flex;
-	flex-direction: column;
-	/* gap: 1rem; */
+.mystery-drinks img {
+	width: fit-content;
 }
 
-.ingredient-icons {
-	height: 3rem;
-}
-
-#play-learn {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 2rem;
-	max-width: 55ch;
-
-}
-
-#play, #learn {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 2rem;
-}
-
-#ingredients {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-
-.site-name {
-	font-size: var(--font-size-h2);
-	font-weight: 700;
-	line-height: var(--line-height-tight);
+.mystery-drinks p {
+	font-size: var(--font-size-small);
 }
 
 footer {
 	background-color: var(--color-black);
 	height: 18vh;
 	padding: 1.5rem;
-	p {
-		color: var(--color-white);
-	}
 }
 
-/* LARGER DEVICES */
+footer p {
+	color: var(--color-white);
+}
 
 @media (min-width: 426px) {
-
-
 	a:hover, button:hover {
-	cursor: pointer;
+		cursor: pointer;
 	}
-
 }
