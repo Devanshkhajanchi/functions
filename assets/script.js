@@ -392,7 +392,7 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	alert("You served drip coffee. There's still some space in the cup, what am I paying for?");
 
 } else if (dripCoffeeCount === 6 && coffeeMix.length == 6) {
-	alert("You served a Cuppa Joe... Ahhh");
+	alert("You served a Cuppa Joe...");
 
 	//Water
 
@@ -413,6 +413,26 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 } else if (hotWaterCount === 6 && coffeeMix.length == 6) {
 	alert("You're a true Hydro Homie!");
+
+		//Milk
+
+} else if (steamedMilkCount === 1 && coffeeMix.length == 1) {
+	alert("Just a splash of steamed milk. Fancy!");
+
+} else if (steamedMilkCount === 2 && coffeeMix.length == 2) {
+	alert("You might be onto something.");
+
+} else if (steamedMilkCount === 3 && coffeeMix.length == 3) {
+	alert("Are you preparing for bedtime?");
+
+} else if (steamedMilkCount === 4 && coffeeMix.length == 4) {
+	alert("Okay, it’s basically just hot milk now");
+
+} else if (steamedMilkCount === 5 && coffeeMix.length == 5) {
+	alert("You’ve invented 'Moo-cha.");
+
+} else if (steamedMilkCount === 6 && coffeeMix.length == 6) {
+	alert("Congratulations, you’ve made a warm milk bath. Add a rubber duck?");
 
 	//Triple Espresso
 
