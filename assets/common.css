@@ -21,6 +21,7 @@
 /* COLOURS */
 	--color-black: #111111;
 	--color-white: #ffffff;
+	--color-yellow: #FFE500;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +68,7 @@ body {
 }
 
 header {
-	background-color: var(--color-black);
+	background-color: var(--color-yellow);
 	padding: 1.2rem;
 	margin-bottom: 1.5rem;
 	position: sticky;
@@ -107,6 +108,7 @@ section {
 	align-items: center;
 	gap: 2rem;
 }
+
 
 #cup-section {
 	position: sticky;
@@ -276,9 +278,7 @@ button, .button {
 }
 
 footer {
-	background-color: var(--color-black);
-	height: 18vh;
-	padding: 1.5rem;
+	background-color: var(--color-yellow);
 }
 
 footer p {
