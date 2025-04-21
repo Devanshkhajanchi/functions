@@ -22,3 +22,45 @@
 	--color-white: #ffffff;
 	--color-yellow: #FFE500;
 }
+
+/* MAIN */
+
+main {
+	padding: 1.5rem;
+}
+
+.coffee-grid {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.coffee-card {
+	padding: 2rem;
+}
+
+.coffee-illustration {
+	height: 150px;
+	width: auto;
+	margin: 1rem;
+}
+
+.coffee-information {
+	max-width: 25ch;
+}
+
+@media (min-width: 426px) {
+
+	/* MAIN */
+	
+	main {
+		padding: 4.5rem;
+	}
+
+	.coffee-grid {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+}
