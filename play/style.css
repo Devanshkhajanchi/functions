@@ -92,7 +92,9 @@
 	#action-buttons {
 		display: flex;
 		gap: 1rem;
-
+		position: fixed;
+		bottom: 0;
+		background-color: var(--color-black);
 	}
 
 	.action-buttons {
@@ -101,7 +103,7 @@
 		font-size: var(--font-size-h3);
 		font-weight: 500;
 		display: inline-block;
-		width: 300px;
+		width: 100%;
 		padding-block: 1rem;
 		padding-inline: 2rem;
 		margin-block: 1.5rem;
@@ -141,6 +143,11 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 1rem;
+		}
+
+		#action-buttons {
+			position: static;
+			background-color: white;
 		}
 
 	}
