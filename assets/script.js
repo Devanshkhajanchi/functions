@@ -34,17 +34,7 @@ let mochaImg = document.getElementById("mocha-img");
 let blackEyeImg = document.getElementById("blackeye-img");
 let redEyeImg = document.getElementById("redeye-img");
 
-// MODAL
 
-let infoModal = document.getElementById("info-modal");
-let closeModal = document.getElementById("close-modal");
-let modalDrinkName = document.getElementById("modal-drink-name");
-let modalDescription = document.getElementById("modal-description");
-let modalDrinkImage = document.getElementById("modal-drink-image");
-
-closeModal.addEventListener("click", ()=>{
-	infoModal.style.display = "none"
-})
 
 
 
@@ -60,7 +50,7 @@ mysteryDrinksName.forEach((drinkname) =>{
 	mysteryDrinkNamesList.push(drinkname);
 })
 
-let discoverDrinkCounter = -1;
+let discoverDrinkCounter = 0;
 
 
 
@@ -170,6 +160,9 @@ iceCreamButton.addEventListener("click", ()=>{
 	}
 });
 
+
+
+
 // CREAM
 
 // creamButton.addEventListener("click", ()=>{
@@ -207,6 +200,46 @@ refreshButton.addEventListener("click", ()=>{
 	counter = -1;
 	coffeeMix = [];
 })
+
+
+// MODAL
+
+let infoModal = document.getElementById("info-modal");
+let closeModal = document.getElementById("close-modal");
+let modalDrinkName = document.getElementById("modal-drink-name");
+let modalDescription = document.getElementById("modal-description");
+let modalDrinkImage = document.getElementById("modal-drink-image");
+let certificate = document.getElementById("certificate")
+let certificateClose = document.getElementById("close-certificate")
+
+closeModal.addEventListener("click", ()=>{
+	infoModal.style.display = "none"
+
+	if(discoverDrinkCounter == 1){
+		certificate.style.display = "block"
+	}
+
+})
+
+
+let submitName = document.getElementById("submit-name");
+let nameInput = document.getElementById("name");
+let nameSpan = document.getElementById("name-span");
+let certificateDone = document.getElementById("certificate-done");
+
+submitName.addEventListener("click", ()=>{
+	let nameOfUser = nameInput.value;
+	nameSpan.innerHTML = nameOfUser;
+	certificate.style.display = "none"
+	certificateDone.style.display = "block";
+	console.log(nameOfUser)
+})
+
+certificateClose.addEventListener("click", ()=>{
+	certificate.style.display = "none"
+})
+
+
 
 
 serveButton.addEventListener("click", ()=>{

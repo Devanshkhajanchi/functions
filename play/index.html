@@ -205,14 +205,47 @@
 
 <!-- CERTIFICATE -->
 
-		<div>
-			<p>
+		<div id="certificate">
+			<div id="certificate-head">
+				<p class="site-name">
+					{Java & Script}
+				</p>
+			</div>
+			<div>
+				<p>
+					Congratulations!<br>You win...something.
+				</p>
+				<label for="name">
+					Please enter your name below
+				</label>
+				<input type="text" id="name" name="name"
+				required
+				minlength="4"
+				maxlength="45"
+				size="45">
+				<button type="button" id="submit-name">
+					<p>
+						Submit
+					</p>
+				</button>
+			</div>
+			<img id="close-certificate" src="../assets/svg/close.svg" alt="">
+		</div>
 
+<!-- CERTIFICATE COMPLETE -->
+
+		<div id="certificate-done">
+			<p>This is to certify that 
+				<span id="name-span">
+					placeholder
+				</span>
+				is a certified online Barista. This doesn’t prove anything but that’s still cool!
 			</p>
 		</div>
 
 <!-- FOOTER -->
 		<footer>
+				<!-- <img class="footer-graphic" src="../assets/svg/water.svg"> -->
 			<div class="footer-website-links">
 				<p class="footer-site-name">
 					{Java & Script}
@@ -223,9 +256,6 @@
 				<p>
 					Learn
 				</p>
-			</div>
-			<div class="footer-graphic">
-				<img src="../assets/svg/water.svg" alt="">
 			</div>
 			<div class="footer-website-information">
 				<p class="footer-course-name">

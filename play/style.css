@@ -146,6 +146,93 @@
 		padding-bottom: 10rem;
 	}
 
+	/* MODAL */
+
+#info-modal {
+	z-index: 2;
+	display: none;
+	position: absolute;
+	width: 80vw;
+	left: 10vw;
+	height: 60vh;
+	top: 10vh;
+	margin: auto;
+	background-color: var(--color-white);
+	border-radius: 8px;
+	padding: 3rem;
+	border: darkgrey 2px solid;
+	justify-content: center;
+	align-items: center;
+}
+
+#all-modal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 2rem;
+}
+
+#modal-text-content {
+	display: flex;
+	flex-direction: column;
+}
+
+#close-modal {
+	width: 25px;
+	margin: 20px;
+	height: auto;
+}
+
+#modal-drink-image {
+	width: 150px;
+	height: auto;
+	margin: auto;
+}
+
+#modal-description {
+	max-width: 25ch;
+}
+
+/* CERTIFICATE */
+
+#certificate {
+	z-index: 3;
+	display: none;
+	position: absolute;
+	width: 80vw;
+	left: 10vw;
+	height: 60vh;
+	top: 10vh;
+	margin: auto;
+	background-color: var(--color-white);
+	border-radius: 8px;
+	border: darkgrey 2px solid;
+	justify-content: center;
+	align-items: center;
+}
+
+#certificate-head {
+	background-color: var(--color-yellow);
+	padding: 3rem;
+}
+
+label {
+	display: block;
+	font:
+	1rem "Fira Sans",
+	sans-serif;
+}
+
+input,
+label {
+	margin: 0.4rem 0;
+}
+
+input {
+	border: #111111 1px solid;
+	border-radius: 8px;
+}
+
 	@media (min-width: 650px) {
 
 		.game-elements {
