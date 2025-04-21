@@ -17,6 +17,8 @@ let mochaNew = true;
 let blackEyeNew = true;
 let redEyeNew = true;
 
+// IMAGES
+
 let espressoImg = document.getElementById("espresso-img");
 let doppioImg = document.getElementById("doppio-img");
 let threeEspressoImg = document.getElementById ("threeespressos-img")
@@ -31,6 +33,18 @@ let affogatoImg = document.getElementById("affogato-img");
 let mochaImg = document.getElementById("mocha-img");
 let blackEyeImg = document.getElementById("blackeye-img");
 let redEyeImg = document.getElementById("redeye-img");
+
+// MODAL
+
+let infoModal = document.getElementById("info-modal");
+let closeModal = document.getElementById("close-modal");
+let modalDrinkName = document.getElementById("modal-drink-name");
+let modalDescription = document.getElementById("modal-description");
+let modalDrinkImage = document.getElementById("modal-drink-image");
+
+closeModal.addEventListener("click", ()=>{
+	infoModal.style.display = "none"
+})
 
 
 
@@ -474,7 +488,13 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a single Espresso";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex"; //might be flex, might be block tbd
+	modalDrinkName.innerHTML = 'Espresso'; // change drink name
+	modalDrinkImage.src = "../assets/svg/single-espresso.svg"; // change image directory
+	modalDescription.innerHTML = alertString
+
+	// alert(alertString);
+
 
 } else if (coffeeMix.length == 0){
 	alert("Your cup is empty");
