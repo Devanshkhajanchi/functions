@@ -226,6 +226,7 @@ let submitName = document.getElementById("submit-name");
 let nameInput = document.getElementById("name");
 let nameSpan = document.getElementById("name-span");
 let certificateDone = document.getElementById("certificate-done");
+let certificateDoneClose = document.getElementById("close-certificate-done");
 
 submitName.addEventListener("click", ()=>{
 	let nameOfUser = nameInput.value;
@@ -239,6 +240,9 @@ certificateClose.addEventListener("click", ()=>{
 	certificate.style.display = "none"
 })
 
+certificateDoneClose.addEventListener("click", ()=>{
+	certificateDone.style.display = "none";
+})
 
 
 

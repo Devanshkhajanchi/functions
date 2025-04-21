@@ -177,7 +177,7 @@
 	flex-direction: column;
 }
 
-#close-modal {
+#close-modal, #close-certificate, #close-certificate-done {
 	width: 25px;
 	margin: 20px;
 	height: auto;
@@ -231,6 +231,24 @@ label {
 input {
 	border: #111111 1px solid;
 	border-radius: 8px;
+}
+
+/* CERTIFICATE DONE */
+
+#certificate-done {
+	z-index: 3;
+	display: none;
+	position: absolute;
+	width: 80vw;
+	left: 10vw;
+	height: 60vh;
+	top: 10vh;
+	margin: auto;
+	background-color: var(--color-white);
+	border-radius: 8px;
+	border: darkgrey 2px solid;
+	justify-content: center;
+	align-items: center;
 }
 
 	@media (min-width: 650px) {
