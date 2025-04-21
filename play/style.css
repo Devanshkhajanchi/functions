@@ -1,0 +1,80 @@
+:root {
+	/* TYPOGRAPHY */
+		--font-base: 'Roboto', sans-serif;
+		--font-size-h1: 3rem;
+		--font-size-h2: 2.4rem;
+		--font-size-h3: 2rem;
+		--font-size-h4: 1.5rem;
+		--font-size-p: 1.2rem;
+		--font-size-small: 0.875rem;
+	
+	/* LINE HEIGHT */
+		--line-height-tight: 1;
+		--line-height-normal : 1.2;
+		--line-height-loose: 1.5;
+	
+	/* LETTER SPACING */
+		--spacing-tight: -0.02em;
+		--spacing-wide: 0.05em;
+	
+	/* COLOURS */
+		--color-black: #111111;
+		--color-white: #ffffff;
+		--color-yellow: #FFE500;
+	}
+
+	#cup-styling {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+		margin: auto;
+	}
+
+	#cup-mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		pointer-events: none;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		display: block;
+	}
+
+	#cup :nth-child(n) {
+		height: 35px;
+		width: 250px;
+		/* border: 1px solid black; */
+	}
+
+	#cup {
+		background-color: lightgrey;
+	}
+
+	#mystery-drink {
+		display: flex;
+		gap: 1rem;
+		overflow-x: auto;
+	}
+
+	.drink {
+		height: 75px;
+		min-width: 100px;
+	}
+
+	.drink-name {
+		font-size: calc(var(--font-size-p)*0.75);
+	}
+
+	@media (min-width: 426px) {
+
+		#mystery-drink {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+
+	}

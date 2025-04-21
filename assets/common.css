@@ -58,6 +58,13 @@ body {
 	background: var(--color-white);
 }
 
+/* GENERAL */
+
+button, .button {
+	touch-action: manipulation;
+	cursor: pointer;
+}
+
 /* HEADER NAVBAR */
 
 header {
