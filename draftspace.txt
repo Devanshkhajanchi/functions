@@ -1,0 +1,226 @@
+header {
+	background-color: var(--color-yellow);
+	padding: 1.2rem;
+	margin-bottom: 1.5rem;
+	position: sticky;
+	top: 0rem;
+}
+
+header a {
+	color: var(--color-white);
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+p {
+	max-width: 55ch;
+}
+
+main {
+	padding-inline: 1rem;
+	margin: auto;
+	min-height: 100vh;
+}
+
+section {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+/* ID */
+
+#cup-section {
+	position: sticky;
+	top: 5rem;
+	height: 12rem;
+	padding: 1rem;
+	z-index: 2;
+	background-color: var(--color-white);
+	margin-bottom: 1rem;
+	width: 100vw;
+}
+
+#cup-styling {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+
+#cup-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+#cup {
+	background-color: lightgrey;
+}
+
+#cup :nth-child(n) {
+	height: 30px;
+	width: 215px;
+	/* border: 1px solid black; */
+}
+
+#all-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+#ingredients {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	/* justify-content: space-between; */
+}
+
+/* CLASSES */
+
+.site-name {
+	font-size: var(--font-size-h3);
+	font-weight: 700;
+	line-height: var(--line-height-tight);
+}
+
+.ingredient-button {
+	flex: 1 1 calc(33.33% - 1rem);
+	min-width: 60px;
+	max-width: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	border: none;
+	font-family: var(--font-base);
+	font-size: var(--font-size-small);
+	font-weight: 600;
+}
+
+.ingredient-icons {
+	height: 3rem;
+}
+
+.measurements {
+	font-size: var(--font-size-small);
+}
+
+button, .button {
+	touch-action: manipulation;
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: var(--font-size-p);
+	line-height: var(--line-height-normal);
+	text-align: center;
+	border: none;
+	border-radius: 0.5rem;
+	letter-spacing: var(--spacing-tight);
+	gap: 0.2rem;
+	cursor: pointer;
+}
+
+#play-learn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2rem;
+	max-width: 55ch;
+}
+
+#play, #learn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+#mystery-drink {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	max-width: 65ch;
+}
+
+#bottom-nav {
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--color-black);
+	width: 100vw;
+}
+
+#serve-button {
+	padding: 1rem;
+	width: 15rem;
+	background-color: #54A1F3;
+	color: white;
+}
+
+#refresh-button {
+	padding: 1rem;
+	background-color: red;
+	border-radius: 100%;
+	display: flex;
+}
+
+#refresh-button img {
+	width: 2rem;
+	height: auto;
+}
+
+.mystery-drinks {
+
+	flex: 1 1 calc(25% - 1rem); /* Flex shorthand learnt using LLM */
+	min-width: 80px;
+	max-width: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
+}
+
+.mystery-drinks img {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+}
+
+.mystery-drinks p {
+	font-size: var(--font-size-small);
+}
+
+footer {
+	background-color: var(--color-yellow);
+}
+
+footer p {
+	color: var(--color-white);
+}
+
+@media (min-width: 426px) {
+	a:hover, button:hover {
+		cursor: pointer;
+	}
+}

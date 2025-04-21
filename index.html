@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HEAD -->
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-		<title>coffee game thing</title>
+		<title>Java & Script</title>
 		<link rel="icon" type="image/svg+xml" href="assets/svg/espresso.svg">
 
 <!-- TYPEFACES -->
@@ -23,9 +25,11 @@
 <!-- HEADER -->
 		<header>
 			<nav>
-				<ul>
-					<li><a href="index.html" class="site-name">Java &<br>Script.</a></li>
-					<div class="site-links">
+				<ul class="header-navigation">
+					<li>
+						<a href="index.html" class="site-name">{Java & Script}</a>
+					</li>
+					<div class="header-site-links">
 						<li><a href="play/index.html">Play</a></li>
 						<li><a href="learn/index.html">Learn</a></li>
 					</div>
@@ -35,43 +39,53 @@
 
 <!-- MAIN -->
 		<main>
+			<section class="main-website-graphic">
+				<img src="assets/svg/water.svg" alt="">
+			</section>
 			<section>
-				<p>
-					This is a playful space where Java meets Javascript. Build your own brews in the game or explore classic espresso recipes with their ingredients and ratios.
+				<p class="main-website-description">
+					If you knew how easy coffee was, you wouldn’t be draining your parents’ bank account on overpriced cups every morning. Use this game to learn coffee recipes, or don’t, your date doesn’t care either way.
 				</p>
 			</section>
-			<section id="play-learn">
-				<div id="play">
-					<a class="button" href="play/index.html">
-						Play
+			<section>
+				<div class="start-button-container">
+					<a id="start-game" href="play/index.html">
+						Play game
 					</a>
-					<p>
-						Make your own coffee and discover mystery recipes.
-					</p>
 				</div>
-				<!-- <div id="learn">
-					<a class="button" href="learn/index.html">
-						Learn
-					</a>
-					<p>
-						Browse classic coffee recipes and their ingredients.
-					</p>
-				</div> -->
 			</section>
 		</main>
 
 <!-- FOOTER -->
 		<footer>
-			<div>
-				<p>
+			<div class="footer-website-links">
+				<p class="footer-site-name">
+					{Java & Script}
+				</p>
+				<div>
+					<p>
+						Play
+					</p>
+					<p>
+						Learn
+					</p>
+				</div>
+			</div>
+			<div class="footer-graphic">
+				<img src="assets/svg/water.svg">
+			</div>
+			<div class="footer-website-information">
+				<p class="footer-course-name">
 					Typography & Interaction
 				</p>
-				<p>
-					MPS Communication Design
-				</p>
-				<p>
-					© Devansh Khajanchi, 2025
-				</p>
+				<div>
+					<p>
+						MPS Communication Design
+					</p>
+					<p>
+						© Devansh Khajanchi, 2025
+					</p>
+				</div>
 			</div>
 		</footer>
 	</body>
