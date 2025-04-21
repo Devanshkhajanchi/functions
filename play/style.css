@@ -23,6 +23,12 @@
 		--color-yellow: #FFE500;
 	}
 
+	main {
+		padding: 1.5rem;
+	}
+
+	/* CUP */
+
 	#cup-styling {
 		position: relative;
 		display: flex;
@@ -54,10 +60,70 @@
 		background-color: lightgrey;
 	}
 
+	/* INGREDIENT BUTTONS */
+
+	#ingredients {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.ingredient-button {
+		text-align: center;
+		border: darkgray solid 2px;
+		padding: 0.5rem;
+		border-radius: 8px;
+		min-width: 120px;
+	}
+
+	.ingredient-name {
+		font-size: calc(var(--font-size-p)*0.90);
+		font-weight: 500;
+	}
+
+	.measurements {
+		font-size: calc(var(--font-size-p)*0.75);
+		font-weight: 500;
+	}
+
+	/* ACTION BUTTONS */
+
+	#action-buttons {
+		display: flex;
+		gap: 1rem;
+
+	}
+
+	.action-buttons {
+		background-color: var(--color-yellow);
+		color: var(--color-black);
+		font-size: var(--font-size-h3);
+		font-weight: 500;
+		display: inline-block;
+		width: 300px;
+		padding-block: 1rem;
+		padding-inline: 2rem;
+		margin-block: 1.5rem;
+		margin-inline: auto;
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.action-buttons:hover {
+	background-color: var(--color-yellow-dark);
+	}
+
+	/* MYSTERY DRINKS */
+
 	#mystery-drink {
 		display: flex;
 		gap: 1rem;
 		overflow-x: auto;
+	}
+
+	.mystery-drinks {
+		text-align: center;
 	}
 
 	.drink {
