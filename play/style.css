@@ -23,7 +23,7 @@
 		--color-yellow: #FFE500;
 	}
 
-	main {
+	#game-elements > * {
 		padding: 1.5rem;
 	}
 
@@ -90,11 +90,14 @@
 	/* ACTION BUTTONS */
 
 	#action-buttons {
+		padding: none;
 		display: flex;
 		gap: 1rem;
 		position: fixed;
 		bottom: 0;
 		background-color: var(--color-black);
+		padding-inline: 1.5rem;
+		width: 100%;
 	}
 
 	.action-buttons {
@@ -137,11 +140,18 @@
 		font-size: calc(var(--font-size-p)*0.75);
 	}
 
-	@media (min-width: 426px) {
+	/* FOOTER */
+
+	footer {
+		padding-bottom: 10rem;
+	}
+
+	@media (min-width: 650px) {
 
 		.game-elements {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			column-gap: 2rem;
 			/* flex-wrap: wrap; */
 		}
 
@@ -167,9 +177,15 @@
 		}
 
 		#action-buttons {
+			flex-direction: column;
+			max-width: 250px;
 			height: fit-content;
 			position: relative;
 			background-color: white;
+		}
+
+		footer {
+			padding-bottom: 2rem;
 		}
 
 	}
