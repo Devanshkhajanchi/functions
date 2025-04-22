@@ -617,7 +617,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 // ATTRIBUTION & CREDIT
-
 // Coded with assistance from Liv Beruti, Parsons MFA CD
 // MDN was used to reference and learn various functions
 // Large Language Model (Chat GPT) was used to debug code.

@@ -58,6 +58,10 @@ body {
 	background: var(--color-white);
 }
 
+/* #ingredient-section-heading {
+	border-bottom: #111111 1px solid;
+} */
+
 /* GENERAL */
 
 button, .button {
@@ -188,6 +192,10 @@ footer {
 		display: flex;
 		font-size: var(--font-size-h3);
 		gap: 2rem;
+
+		a:hover {
+			color: darkgrey;
+		}
 	}
 
 	/* MAIN */
@@ -210,6 +218,7 @@ footer {
 		padding-block: 2rem;
 		padding-inline: 4rem;
 		position: relative;
+		margin-top: 3rem;
 	}
 
 	.footer-website-links {

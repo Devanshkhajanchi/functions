@@ -27,126 +27,155 @@
 		padding: 1.5rem;
 	}
 
-	/* CUP */
+/* CUP */
 
-	#cup-styling {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: fit-content;
-		margin: auto;
+#cup-styling {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	margin: auto;
+}
+
+#cup-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+#cup :nth-child(n) {
+	height: 35px;
+	width: 250px;
+	/* border: 1px solid black; */
+}
+
+#cup {
+	background-color: lightgrey;
+}
+
+/* ALL BUTTONS */
+
+#all-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 3rem;
+
+	h3 {
+		padding-bottom: 1rem;
+		border-bottom: var(--color-black) 1px solid;
 	}
+}
 
-	#cup-mask {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 2;
-		pointer-events: none;
-		width: 100%;
-		height: auto;
-		object-fit: contain;
-		display: block;
+/* UNLOCKED RECIPES */
+
+#unlock-recipes {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 3rem;
+
+	h3 {
+		padding-bottom: 1rem;
+		border-bottom: var(--color-black) 1px solid;
 	}
+}
 
-	#cup :nth-child(n) {
-		height: 35px;
-		width: 250px;
-		/* border: 1px solid black; */
-	}
+/* INGREDIENT BUTTONS */
 
-	#cup {
-		background-color: lightgrey;
-	}
+#ingredients {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
 
-	/* INGREDIENT BUTTONS */
+.ingredient-button {
+	text-align: center;
+	border: darkgray solid 2px;
+	padding: 0.5rem;
+	border-radius: 8px;
+	min-width: 120px;
+}
 
-	#ingredients {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
+.ingredient-name {
+	font-size: calc(var(--font-size-p)*0.90);
+	font-weight: 500;
+}
 
-	.ingredient-button {
-		text-align: center;
-		border: darkgray solid 2px;
-		padding: 0.5rem;
-		border-radius: 8px;
-		min-width: 120px;
-	}
+.measurements {
+	font-size: calc(var(--font-size-p)*0.75);
+	font-weight: 500;
+}
 
-	.ingredient-name {
-		font-size: calc(var(--font-size-p)*0.90);
-		font-weight: 500;
-	}
+/* ACTION BUTTONS */
 
-	.measurements {
-		font-size: calc(var(--font-size-p)*0.75);
-		font-weight: 500;
-	}
+#action-buttons {
+	padding: none;
+	display: flex;
+	gap: 1rem;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--color-black);
+	padding-inline: 1.5rem;
+	width: 100%;
+}
 
-	/* ACTION BUTTONS */
+.action-buttons {
+	background-color: var(--color-yellow);
+	color: var(--color-black);
+	font-size: var(--font-size-h3);
+	font-weight: 500;
+	display: inline-block;
+	width: 100%;
+	padding-block: 1rem;
+	padding-inline: 2rem;
+	margin-block: 1.5rem;
+	margin-inline: auto;
+	border-radius: 12px;
+	text-align: center;
+}
 
-	#action-buttons {
-		padding: none;
-		display: flex;
-		gap: 1rem;
-		position: fixed;
-		bottom: 0;
-		background-color: var(--color-black);
-		padding-inline: 1.5rem;
-		width: 100%;
-	}
+.action-buttons:hover {
+background-color: var(--color-yellow-dark);
+}
 
-	.action-buttons {
-		background-color: var(--color-yellow);
-		color: var(--color-black);
-		font-size: var(--font-size-h3);
-		font-weight: 500;
-		display: inline-block;
-		width: 100%;
-		padding-block: 1rem;
-		padding-inline: 2rem;
-		margin-block: 1.5rem;
-		margin-inline: auto;
-		border-radius: 12px;
-		text-align: center;
-	}
+/* MYSTERY DRINKS */
 
-	.action-buttons:hover {
-	background-color: var(--color-yellow-dark);
-	}
+#mystery-drink {
+	display: flex;
+	gap: 1rem;
+	overflow-x: auto;
+	margin-inline: -3rem;
+}
 
-	/* MYSTERY DRINKS */
+.mystery-drinks {
+	text-align: center;
+}
 
-	#mystery-drink {
-		display: flex;
-		gap: 1rem;
-		overflow-x: auto;
-	}
+.drink {
+	height: 75px;
+	min-width: 100px;
+}
 
-	.mystery-drinks {
-		text-align: center;
-	}
+.drink-name {
+	font-size: calc(var(--font-size-p)*0.75);
+}
 
-	.drink {
-		height: 75px;
-		min-width: 100px;
-	}
+/* FOOTER */
 
-	.drink-name {
-		font-size: calc(var(--font-size-p)*0.75);
-	}
+footer {
+	padding-bottom: 10rem;
+}
 
-	/* FOOTER */
-
-	footer {
-		padding-bottom: 10rem;
-	}
-
-	/* MODAL */
+/* MODAL */
 
 #info-modal {
 	z-index: 2;
@@ -223,8 +252,7 @@ label {
 	sans-serif;
 }
 
-input,
-label {
+input, label {
 	margin: 0.4rem 0;
 }
 
@@ -251,46 +279,60 @@ input {
 	align-items: center;
 }
 
-	@media (min-width: 650px) {
+@media (min-width: 650px) {
 
-		.game-elements {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			column-gap: 2rem;
-			/* flex-wrap: wrap; */
-		}
-
-		#cup-section {
-			/* transform: scale(1.5);
-			transform-origin: top; */
-		}
-
-		#cup :nth-child(n) {
-			height: 49px;
-			width: 350px;
-			/* border: 1px solid black; */
-		}
-
-		#mystery-drink {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 1rem;
-		}
-
-		#ingredients {
-			display: flex;
-		}
-
-		#action-buttons {
-			flex-direction: column;
-			max-width: 250px;
-			height: fit-content;
-			position: relative;
-			background-color: white;
-		}
-
-		footer {
-			padding-bottom: 2rem;
-		}
-
+	.game-elements {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		/* flex-wrap: wrap; */
 	}
+
+	#cup-section {
+		margin: 5rem;
+	}
+
+	#cup :nth-child(n) {
+		height: 49px;
+		width: 350px;
+	}
+
+	#mystery-drink {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-inline: 0rem;
+	}
+
+	#all-buttons {
+		margin-top: 5rem;
+		margin-left: 0;
+	}
+
+	#unlock-recipes {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	#ingredients {
+		display: flex;
+	}
+
+	#action-buttons {
+		flex-direction: column;
+		max-width: 350px;
+		height: fit-content;
+		position: relative;
+		background-color: white;
+		margin-inline: auto;
+		margin-top: 3rem;
+	}
+
+	#serve-button, #refresh-button {
+		margin: 0;
+	}
+
+	footer {
+		padding-bottom: 2rem;
+	}
+}

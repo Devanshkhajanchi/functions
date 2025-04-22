@@ -8,6 +8,8 @@ There are two main pages:
 
 Play: Get hands on and experiment by adding ingredients to a virtual cup. Match the right combo and you’ll discover a known drink. Go wild, and you might just invent a new one
 
-Learn: Curious about a recipe? Hover over or tap on the cups to reveal what they really are and see what goes into them.
+Learn: Curious about a recipe? Head over to the learn section for a hint.
 
 The goal of this project was to apply everything I’ve learned so far in my coding journey into something playful, interactive, and educational. Hope you enjoy exploring it as much as I enjoyed building it!
+
+Also, Why is the website yellow? Because this yellow just slaps. ✊
