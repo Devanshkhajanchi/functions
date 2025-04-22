@@ -208,10 +208,9 @@ closeModal.addEventListener("click", ()=>{
 
 	// CERTIFICATE COUNTER
 
-	if(discoverDrinkCounter == 1){
+	if(discoverDrinkCounter == 14){
 		certificate.style.display = "block"
 	}
-
 })
 
 

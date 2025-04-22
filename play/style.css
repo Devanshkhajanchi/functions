@@ -236,7 +236,7 @@ footer {
 
 #certificate {
 	z-index: 3;
-	/* display: none; */
+	display: none;
 	position: absolute;
 	width: 80vw;
 	left: 10vw;
