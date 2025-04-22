@@ -1,6 +1,3 @@
-// ATTRIBUTION & CREDIT
-// Coded with assistance from Liv Beruti, Parsons MFA CD
-
 //BOOLEANS
 let espressoNew = true;
 let doppioNew = true;
@@ -590,6 +587,37 @@ document.addEventListener("keydown", function(event) {
 	}
 });
 
+// Enter to submit certificate
+document.addEventListener("keydown", function(event) {
 
+	if (event.key === "Enter") {
+		if (certificate.style.display === "block") {
+			event.preventDefault();
+			submitName.click();
+		}
+	}
+});
 
+// Esc key to Close modals.
+document.addEventListener("keydown", function(event) {
+	if (event.key === "Escape") {
 
+		if (infoModal.style.display === "flex") {
+			infoModal.style.display = "none";
+		}
+
+		if (certificate.style.display === "block") {
+			certificate.style.display = "none";
+		}
+
+		if (certificateDone.style.display === "block") {
+			certificateDone.style.display = "none";
+		}
+	}
+});
+
+// ATTRIBUTION & CREDIT
+
+// Coded with assistance from Liv Beruti, Parsons MFA CD
+// MDN was used to reference and learn various functions
+// Large Language Model (Chat GPT) was used to debug code.
