@@ -23,9 +23,19 @@
 		--color-yellow: #FFE500;
 	}
 
-	#game-elements > * {
-		padding: 1.5rem;
-	}
+#game-elements > * {
+	padding: 1.5rem;
+}
+
+html, body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
 
 /* CUP */
 
@@ -226,7 +236,7 @@ footer {
 
 #certificate {
 	z-index: 3;
-	display: none;
+	/* display: none; */
 	position: absolute;
 	width: 80vw;
 	left: 10vw;
@@ -238,18 +248,20 @@ footer {
 	border: darkgrey 2px solid;
 	justify-content: center;
 	align-items: center;
+
 }
 
-#certificate-head {
+.certificate-head {
 	background-color: var(--color-yellow);
 	padding: 3rem;
+	text-align: center;
 }
 
-label {
-	display: block;
-	font:
-	1rem "Fira Sans",
-	sans-serif;
+.certificate-content {
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	gap: 2rem;
 }
 
 input, label {
@@ -259,6 +271,25 @@ input, label {
 input {
 	border: #111111 1px solid;
 	border-radius: 8px;
+	height: 3.5rem;
+	padding-inline: 1rem;
+}
+
+label {
+	display: block;
+}
+
+.input-and-button {
+	display: flex;
+	flex-direction: column;
+}
+
+#submit-name {
+	background-color: #FFE500;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	border-radius: 8px;
+	text-align: center;
 }
 
 /* CERTIFICATE DONE */
@@ -285,7 +316,6 @@ input {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 2rem;
-		/* flex-wrap: wrap; */
 	}
 
 	#cup-section {
@@ -330,6 +360,15 @@ input {
 
 	#serve-button, #refresh-button {
 		margin: 0;
+	}
+
+	/* MODALS */
+
+	#info-modal, #certificate, #certificate-done {
+		width: 50vw;
+		left: 25vw;
+		height: 70vh;
+		top: 15vh;
 	}
 
 	footer {

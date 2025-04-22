@@ -208,7 +208,7 @@ closeModal.addEventListener("click", ()=>{
 
 	// CERTIFICATE COUNTER
 
-	if(discoverDrinkCounter == 14){
+	if(discoverDrinkCounter == 1){
 		certificate.style.display = "block"
 	}
 
@@ -579,7 +579,8 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 
 //Enter for submit
 // Attribution: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
-// This 'Event listener' function works by telling the browser to listen for an input from a device (Keyboard). The function runs when the selected key is pressed. 
+// This Event listener function works by telling the browser to listen for an input from a device (Keyboard). 
+// The function runs when the selected key is pressed. 
 document.addEventListener("keydown", function(event) {
 	if (event.key === "Enter") {
 		event.preventDefault();

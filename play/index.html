@@ -206,28 +206,28 @@
 <!-- CERTIFICATE -->
 
 		<div id="certificate" class="modal">
-			<div id="certificate-head">
+			<div class="certificate-head">
 				<p class="site-name">
 					{Java & Script}
 				</p>
 			</div>
-			<div>
-				<p>
-					Congratulations!<br>You win...something.
-				</p>
-				<label for="name">
-					Please enter your name below
-				</label>
-				<input type="text" id="name" name="name"
-				required
-				minlength="4"
-				maxlength="45"
-				size="45">
-				<button type="button" id="submit-name">
-					<p>
-						Submit
-					</p>
-				</button>
+			<div class="certificate-content">
+				<h3>
+					Congratulations!<br>You, uh.. Win!
+				</h3>
+				<div>
+					<label for="name">
+						Please enter your name below
+					</label>
+					<div class="input-and-button">
+						<input type="text" id="name" name="name" required minlength="4" maxlength="45" size="45">
+						<button type="button" id="submit-name">
+							<p>
+								Submit
+							</p>
+						</button>
+					</div>
+				</div>
 			</div>
 			<img id="close-certificate" src="../assets/svg/close.svg">
 		</div>
@@ -235,18 +235,23 @@
 <!-- CERTIFICATE DONE -->
 
 		<div id="certificate-done" class="modal">
-			<div id="certificate-head">
+			<div class="certificate-head">
 				<p class="site-name">
 					{Java & Script}
 				</p>
 			</div>
-			<p>This is to certify that 
-				<span id="name-span">
-					placeholder
-				</span>
-				is a certified online Barista. This doesn’t prove anything but that’s still cool!
+			<div class="certificate-content">
+				<p>This is to certify that 
+					<span id="name-span">
+						placeholder
+					</span>
+					is a certified online Barista. This doesn’t prove anything but that’s still cool!
+				</p>
+			</div>
+			<!-- <img id="close-certificate-done" src="../assets/svg/close.svg"> -->
+			<p id="close-certificate-done">
+				Close
 			</p>
-			<img id="close-certificate-done" src="../assets/svg/close.svg">
 		</div>
 
 <!-- FOOTER -->
