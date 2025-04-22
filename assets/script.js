@@ -34,15 +34,13 @@ let mochaImg = document.getElementById("mocha-img");
 let blackEyeImg = document.getElementById("blackeye-img");
 let redEyeImg = document.getElementById("redeye-img");
 
-
-
-
+// MYSTERY DRINKS
 
 let mysteryDrinks = document.querySelectorAll('.drink');
 let mysteryDrinkList = [];
 mysteryDrinks.forEach((drink) => {
 	mysteryDrinkList.push(drink);
-  });
+});
 
 let mysteryDrinksName = document.querySelectorAll('.drink-name');
 let mysteryDrinkNamesList = [];
@@ -51,7 +49,6 @@ mysteryDrinksName.forEach((drinkname) =>{
 })
 
 let discoverDrinkCounter = 0;
-
 
 
 console.log(mysteryDrinkList);
@@ -160,9 +157,6 @@ iceCreamButton.addEventListener("click", ()=>{
 	}
 });
 
-
-
-
 // CREAM
 
 // creamButton.addEventListener("click", ()=>{
@@ -215,7 +209,9 @@ let certificateClose = document.getElementById("close-certificate")
 closeModal.addEventListener("click", ()=>{
 	infoModal.style.display = "none"
 
-	if(discoverDrinkCounter == 1){
+	// CERTIFICATE COUNTER
+
+	if(discoverDrinkCounter == 14){
 		certificate.style.display = "block"
 	}
 
@@ -245,7 +241,6 @@ certificateDoneClose.addEventListener("click", ()=>{
 })
 
 
-
 serveButton.addEventListener("click", ()=>{
 
 	let espressoCount = coffeeMix.filter(ingredient => ingredient === "Espresso").length;
@@ -272,7 +267,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Cortado";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Cortado';
+	modalDrinkImage.src = "../assets/svg/cortado.svg";
+	modalDescription.innerHTML = alertString
 
 	//Affogato
 
@@ -286,7 +284,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made an Affogato";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Affogato';
+	modalDrinkImage.src = "../assets/svg/Affogato.svg";
+	modalDescription.innerHTML = alertString
 
 	//Hot Chocolate
 
@@ -300,7 +301,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Hot Chocolate";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Hot Chocolate';
+	modalDrinkImage.src = "../assets/svg/hot-chocolate.svg";
+	modalDescription.innerHTML = alertString
 
 	//Cafe Mocha
 
@@ -314,7 +318,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Cafe Mocha";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Café Mocha';
+	modalDrinkImage.src = "../assets/svg/mocha.svg";
+	modalDescription.innerHTML = alertString
 
 	//Cafe Latte
 
@@ -328,7 +335,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Cafe Latte";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Café Latte';
+	modalDrinkImage.src = "../assets/svg/latte.svg";
+	modalDescription.innerHTML = alertString
 
 	//Cappuccino
 
@@ -342,7 +352,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Cappuccino";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Cappuccino';
+	modalDrinkImage.src = "../assets/svg/cappuccino.svg";
+	modalDescription.innerHTML = alertString
 
 	//Flat White
 
@@ -356,7 +369,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Flat White";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Flat White';
+	modalDrinkImage.src = "../assets/svg/flat-white.svg";
+	modalDescription.innerHTML = alertString
 
 	//Black Eye
 
@@ -370,7 +386,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Black Eye";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Black Eye';
+	modalDrinkImage.src = "../assets/svg/black-eye.svg";
+	modalDescription.innerHTML = alertString
 
 	//Red Eye
 
@@ -384,21 +403,27 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Red Eye";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Red Eye';
+	modalDrinkImage.src = "../assets/svg/red-eye.svg";
+	modalDescription.innerHTML = alertString
 
 	//Cafe Zorro
 
 } else if (espressoCount === 1 && hotWaterCount === 1 && coffeeMix.length == 2) {
 	let alertString = ""
 	if(cafeZorroNew){
-		alertString = "You made a Cafe Zorro and discovered a new drink";
+		alertString = "You made a Café Zorro and discovered a new drink";
 		cafeZorroImg.src = "../assets/svg/cafe-zorro.svg"
 		discoverDrinkCounter += 1;
 		cafeZorroNew = false;
 	} else {
-		alertString = "You made a Cafe Zorro";
+		alertString = "You made a Café Zorro";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Café Zorro';
+	modalDrinkImage.src = "../assets/svg/cafe-zorro.svg";
+	modalDescription.innerHTML = alertString
 
 	//Americano
 
@@ -412,7 +437,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made an Americano";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Americano';
+	modalDrinkImage.src = "../assets/svg/americano.svg";
+	modalDescription.innerHTML = alertString
 
 	//More Espresso
 
@@ -497,7 +525,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Triple Espresso";
 	}
-	alert(alertString);
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Triple Espresso';
+	modalDrinkImage.src = "../assets/svg/triple-espresso.svg";
+	modalDescription.innerHTML = alertString
 
 	//Doppio
 
@@ -511,7 +542,11 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a Doppio";
 	}
-	alert(alertString);
+
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = 'Doppio';
+	modalDrinkImage.src = "../assets/svg/doppio.svg";
+	modalDescription.innerHTML = alertString
 
 	//Espresso
 
@@ -525,12 +560,10 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	} else {
 		alertString = "You made a single Espresso";
 	}
-	infoModal.style.display = "flex"; //might be flex, might be block tbd
+	infoModal.style.display = "flex";
 	modalDrinkName.innerHTML = 'Espresso'; // change drink name
 	modalDrinkImage.src = "../assets/svg/single-espresso.svg"; // change image directory
 	modalDescription.innerHTML = alertString
-
-	// alert(alertString);
 
 
 } else if (coffeeMix.length == 0){
