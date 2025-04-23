@@ -170,7 +170,7 @@ footer {
 	font-weight: 700;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 650px) {
 
 	a:hover, button:hover {
 		cursor: pointer;
