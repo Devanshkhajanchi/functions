@@ -21,6 +21,7 @@
 		--color-black: #111111;
 		--color-white: #ffffff;
 		--color-yellow: #FFE500;
+		--color-yellow-dark: #DDC700;
 	}
 
 #game-elements > * {
@@ -116,6 +117,10 @@ main {
 	min-width: 120px;
 }
 
+.ingredient-button:hover {
+	background-color: lightgrey;
+}
+
 .ingredient-name {
 	font-size: calc(var(--font-size-p)*0.8);
 	font-weight: 500;
@@ -157,12 +162,16 @@ main {
 	background-color: var(--color-yellow);
 }
 
+#serve-button:hover {
+	background-color: var(--color-yellow-dark);
+}
+
 #refresh-button {
 	background-color: darkgrey;
 }
 
-.action-buttons:hover {
-background-color: var(--color-yellow-dark);
+#refresh-button:hover {
+	background-color: lightgrey;
 }
 
 /* MYSTERY DRINKS */
@@ -256,13 +265,15 @@ footer {
 	border: darkgrey 2px solid;
 	justify-content: center;
 	align-items: center;
-
+	
 }
 
 .certificate-head {
 	background-color: var(--color-yellow);
 	padding: 3rem;
 	text-align: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 
 .certificate-content {
@@ -316,7 +327,14 @@ label {
 	border: darkgrey 2px solid;
 	justify-content: center;
 	align-items: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
+
+#close-certificate-done {
+	margin: auto;
+}
+
 
 @media (min-width: 650px) {
 
@@ -382,5 +400,32 @@ label {
 
 	footer {
 		padding-bottom: 2rem;
+	}
+}
+
+@media print {
+
+	body * {
+		visibility: hidden;
+	}
+
+	#certificate-done,
+	#certificate-done * {
+		visibility: visible;
+	}
+
+	#close-certificate-done {
+		display: none;
+	}
+
+	#certificate-done {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		background: white;
+		color: black;
+		padding: 2rem;
 	}
 }

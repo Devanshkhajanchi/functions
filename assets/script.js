@@ -70,7 +70,6 @@ let chocolateButton = document.getElementById("chocolate-button");
 let iceCreamButton = document.getElementById("ice-cream-button");
 // let creamButton = document.getElementById("cream-button");
 let dripCoffeeButton = document.getElementById("drip-coffee-button");
-
 let refreshButton = document.getElementById("refresh-button");
 let serveButton = document.getElementById("serve-button");
 
@@ -441,53 +440,113 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 	//More Espresso
 
 } else if (espressoCount === 6 && coffeeMix.length == 6) {
-	alert("That's almost certain death");
+	// alert("That's almost certain death");]
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "That's almost certain death...";
 
 } else if (espressoCount === 5 && coffeeMix.length == 5) {
-	alert("You made way too much Espresso");
+	// alert("You made way too much Espresso");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You made way too much Espresso";
 
 } else if (espressoCount === 4 && coffeeMix.length == 4) {
-	alert("You made a lot of Espresso");
+	// alert("You made a lot of Espresso");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You made a lot of Espresso";
 
 	//Drip Coffee
 
 } else if (dripCoffeeCount === 1 && coffeeMix.length == 1) {
-	alert("You served very little drip coffee. Is this a joke to you?");
+	// alert("You served very little drip coffee. Is this a joke to you?");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served very little drip coffee. Is this a joke to you?";
 
 } else if (dripCoffeeCount === 2 && coffeeMix.length == 2) {
-	alert("You served some drip coffee Wait, that's it?!");
+	// alert("You served some drip coffee Wait, that's it?!");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served some drip coffee Wait, that's it?!";
 
 } else if (dripCoffeeCount === 3 && coffeeMix.length == 3) {
-	alert("You served half a drip coffee.");
+	// alert("You served half a drip coffee.");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served half a drip coffee.";
 
 } else if (dripCoffeeCount === 4 && coffeeMix.length == 4) {
-	alert("You served some drip coffee. Now we're talkin");
+	// alert("You served some drip coffee. Now we're talkin");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served some drip coffee. Now we're talkin";
 
 } else if (dripCoffeeCount === 5 && coffeeMix.length == 5) {
-	alert("You served drip coffee. There's still some space in the cup, what am I paying for?");
+	// alert("You served drip coffee. There's still some space in the cup, what am I paying for?");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served drip coffee. There's still some space in the cup, what am I paying for?";
 
 } else if (dripCoffeeCount === 6 && coffeeMix.length == 6) {
-	alert("You served a Cuppa Joe...");
+	// alert("You served a Cuppa Joe!");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You served a Cuppa Joe!";
 
 	//Water
 
 } else if (hotWaterCount === 1 && coffeeMix.length == 1) {
-	alert("Um, a shot of water?");
+	// alert("Um, a shot of water?");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "Um, a shot of water?";
 
 } else if (hotWaterCount === 2 && coffeeMix.length == 2) {
-	alert("Come on!");
+	// alert("Come on!");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "Come on!";
 
 } else if (hotWaterCount === 3 && coffeeMix.length == 3) {
-	alert("I have water at home you know...");
+	// alert("I have water at home you know...");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "I have water at home you know...";
 
 } else if (hotWaterCount === 4 && coffeeMix.length == 4) {
-	alert("Fine, if you insist");
+	// alert("Fine, if you insist");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "Fine, if you insist";
 
 } else if (hotWaterCount === 5 && coffeeMix.length == 5) {
-	alert("No really, that's enough water. I'd like some coffee please?");
+	// alert("No really, that's enough water. I'd like some coffee please?");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "No really, that's enough water. I'd like some coffee please?";
 
 } else if (hotWaterCount === 6 && coffeeMix.length == 6) {
-	alert("You're a true Hydro Homie!");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "You're a true Hydro Homie!";
+
 
 		//Milk
 
@@ -557,15 +616,23 @@ if (espressoCount === 1 && steamedMilkCount === 1 && coffeeMix.length == 2) {
 		alertString = "You made a single Espresso";
 	}
 	infoModal.style.display = "flex";
-	modalDrinkName.innerHTML = 'Espresso'; // change drink name
-	modalDrinkImage.src = "../assets/svg/single-espresso.svg"; // change image directory
+	modalDrinkName.innerHTML = 'Espresso';
+	modalDrinkImage.src = "../assets/svg/single-espresso.svg";
 	modalDescription.innerHTML = alertString
 
 
 } else if (coffeeMix.length == 0){
-	alert("Your cup is empty");
+	// alert("Your cup is empty");
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "Your cup is empty";
 } else {
-	alert("you made a new drink!")
+	// alert("you made a new drink!")
+	infoModal.style.display = "flex";
+	modalDrinkName.innerHTML = '';
+	modalDrinkImage.style.display = "none";
+	modalDescription.innerHTML = "you made a new drink!";
 }
 
 	divList.forEach(box => {
